@@ -1,5 +1,5 @@
 # itc
-Scripts to analyze innate T cell transcriptomes from [reference paper]
+Scripts to analyze innate T cell transcriptomes from Gutierrez-Arcelus et al., at the moment in bioRxiv (https://doi.org/10.1101/280370).
 
 In the low_input_rnaseq folder, you'll find a script to re-create the PCA that revealed the innateness gradient on PC1 (Fig. 2a-b).
 
