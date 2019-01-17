@@ -15,8 +15,7 @@ library(Seurat)
 library(ggplot2)
 
 # Will use python for UMAP
-PYTHON_PATH <- "/path/to/python"   #  Fill in
-use_python(PYTHON_PATH)
+use_python("/path/to/python")
 
 ## Install UMAP python package from Github:  https://github.com/lmcinnes/umap
 umap <- import("umap")
