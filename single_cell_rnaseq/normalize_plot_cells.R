@@ -22,14 +22,14 @@ use_python(PYTHON_PATH)
 umap <- import("umap")
 
 # Additional functions to optomize data processing
-sourceCpp("/data/srlab/anathan/itc/utils_ilya.cpp")
-source("/data/srlab/anathan/itc/utils_ilya.R")
+sourceCpp("utils_ilya.cpp")
+source("utils_ilya.R")
 
 # Read gene counts and meta data
-exprs_raw <- read.table("/data/srlab/anathan/single_cell_rnaseq_gene_counts.txt", header = T, row.names = 1)
+exprs_raw <- read.table("single_cell_rnaseq_gene_counts.txt", header = T, row.names = 1)
 exprs_raw <- Matrix(as.matrix(exprs_raw), sparse = T)
 
-meta_data <- read.table("/data/srlab/anathan/single_cell_rnaseq_meta_data.txt", header = T)
+meta_data <- read.table("single_cell_rnaseq_meta_data.txt", header = T)
 # head(meta_data)
 # all(meta_data$cell_id == colnames(exprs_raw))
 
